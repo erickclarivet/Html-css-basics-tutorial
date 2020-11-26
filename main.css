@@ -1,0 +1,148 @@
+/* 
+Note :
+* px : in pixel
+* em : by the police size (if police parent 2px or 2in, 1em = 2in)
+* rem : same than em but by police root of the doc (default police example)
+* % : by the size of the screen or parent element
+*/
+
+/* Add a text color blue and background purple for all h1 and h3 : not a good solution => better use class */
+h1, h3 {
+        color:blue;
+    background-color: rebeccapurple;
+}
+            
+/* We can mix style property (here we have h1,h3 style and h3 style) */
+h3 {
+    font-size: 50px;
+}
+
+/* Define a id and a style associated (it override h3 style, and class property) => better use class */
+#titreNiveau3 {
+    color:red;
+}
+
+/* Define a class and a style associated (it override h3 style property) */
+.titreNiveau3 {
+    color: brown;
+}
+
+.paddingLeft20 {
+    padding-left: 20px;
+}
+
+.marginLeft20 {
+    margin-left: 20px;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.border1 {
+    border: 1px solid black;
+}
+
+.paddingGlobal20 {
+    padding : 20px;
+}
+
+.persoStyle {
+    font-weight: bold;
+    font-family: Berlin Sans FB;
+    font-size: 30px;
+}
+
+.floatLeft {
+    float: left;
+    width: 20%;
+}
+
+.floatRight {
+    float: right;
+    width: 20%
+}
+
+.clearBoth {
+    clear:both
+}
+
+.positionAbsolute {
+    position: absolute;
+    top:0;
+    left: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.positioRelative {
+    position: relative;
+    top:50px;
+    left:100px;
+    width: 100px;
+    border: 1px solid red;
+}
+
+.positionSticky {
+    position: sticky;
+    top:50px;
+    left:500px;
+    width: 100px;
+    border: 1px solid green;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap; /* in line, if we have reach the size max in one line for all element we go back to line */
+}
+
+.itemSize {
+    width: 50%;
+}
+
+.itemSize100px { 
+    width: 100px;
+}
+
+.itemSize120px { 
+    width: 120px;
+}
+
+.itemSizeAuto { 
+    flex: auto;
+}
+
+/* Pseudo class => its a already defines class */
+.itemSizeAuto:hover {
+    background-color: hotpink;
+}
+
+/* Pseudo element => its a already defines element */
+.itemSizeAuto::first-letter {
+    color: lightseagreen;
+    font-size: 40px;
+}
+
+.class1 {
+    background-color: lightseagreen;
+}
+
+.class2 {
+    background-color: magenta;
+}
+
+.class1 .class2 {
+    background-color: orange;
+}
+
+.class1 .class2 img {
+    width: 100px;
+}

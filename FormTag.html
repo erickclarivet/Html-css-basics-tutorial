@@ -1,0 +1,41 @@
+<h1>Second page !</h1>
+<!-- Create a form with label and input (can choose the type) 
+    - required force the user to fill the input 
+    - fieldset regroupe multiple control in a section
+    - legend allows to put a name to the section
+    - select and option allows to show a dropdown list
+-->
+<form>
+    <fieldset>
+        <legend>Informations</legend>
+        <div>
+            <label>Name :</label>
+            <input type="text" required />
+        </div>
+
+        <div>
+            <label>Age :</label>
+            <input type="number" required/>
+        </div>
+
+        <div>
+            <label>Email :</label>
+            <input type="email" required />
+        </div>
+
+        <div>
+            <label>Sexe :</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </fieldset>
+</form>
+<hr />
+<a href="BasicHtmlTags.html">Page 1 with basic html tags</a>

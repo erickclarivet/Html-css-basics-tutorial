@@ -1,0 +1,133 @@
+<!-- Without any tag -->
+This is not in a tag
+so it will be in the same line.
+If we want to go back to the line we need <br /> <!-- put a back to line (\n) between two line -->
+Nice ! It works !
+<!-- To write text in a block. It adds space before and after -->
+<p>
+    Coucou
+</p>
+<p>
+    Monsieur
+</p>
+
+<!-- REMEMBER : it exists 3 types of tags :
+- auto closed (<br />)
+- in line (<span></span>)
+- block (<p></p>) -->
+<!-- To put a line (___) to separate 2 sections -->
+<hr /> 
+
+<!-- 6 niveaux de titres -->
+<h1>Titre 1</h1>
+<h2>Titre 2</h2>
+<h3>Titre 3</h3>
+<h4>Titre 4</h4>
+<h5>Titre 5</h5>
+<h6>Titre 6</h6>
+<hr />
+
+<!-- To show a list with dot to enumerate item -->
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+<!-- To show a list with number to enumerate item -->
+<ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ol>
+
+<hr />
+<!-- Example with everything -->
+<h1>A list</h1>
+<p>This list is a list.</p>
+<ul>
+    <li>item 1</li>
+    <ul>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <li>item 4</li>
+</ul>
+<hr />
+
+<!-- Define container inline or block -->
+<!-- Like p it create a block (take all the line) but without space before and after -->
+<div>This is a first a div tag.</div>
+<div>This is a second a div tag.</div>
+<!-- This will create a container but everything will be on the same line -->
+<span>A first span tag</span>
+<span>A second span tag</span>
+<!-- GOOD ADVICE :
+Open the html in chrome, press F12 and inspect the elements in order to see where the tag start and finish ! -->
+<hr />
+
+<!-- To add a picture (auto closed tag) -->
+<img src="pictures\loutre-de-mer.jpg" />
+<!-- Can add a size or  -->
+<img src="pictures\loutre-de-mer.jpg" width="500" />
+<!-- Can add a property in case the picture doesn't show -->
+<img src="Path do not exist" width="100" alt="Picture of a loutre" /> 
+<!-- Notice : This is an inline tag ! -->
+<hr />
+
+<b>For a bold text for visual purpose</b>
+<i>This italic text for visual purpose</i>
+<strong>This strong text for insist on the valor of a word</strong>
+<em>This em text for insist on the valor of a word</em>
+<hr />
+
+<!-- To show a simple tab -->
+<table>
+    <tr>
+        <td>first cell</td>
+        <td>second cell</td>
+    </tr>
+</table>
+<br />
+<!-- If we want to add border, use css. We explains later. -->
+<table style="border: 1px solid black">
+    <tr style="border: 1px solid black">
+        <td style="border: 1px solid black">first cell</td>
+        <td style="border: 1px solid black">second cell</td>
+    </tr>
+    <tr style="border: 1px solid black">
+        <td style="border: 1px solid black">third cell</td>
+        <td style="border: 1px solid black">fourth cell</td>
+    </tr>
+</table>
+<br />
+<!-- If we want to define a part HEAD and Body.
+    We use colspan to take 2 col instead of 1
+    We use rowspan to take 2 line instead of 1 -->
+<table style="border: 1px solid black">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black" colspan="2">title of the tab</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">first cell</td>
+            <td style="border: 1px solid black">second cell</td>
+        </tr>
+        <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">third cell</td>
+            <td style="border: 1px solid black" rowspan="2">fourth cell</td>
+        </tr>
+        <tr style="border: 1px solid black">
+            <td style="border: 1px solid black">fifth cell</td>
+        </tr>
+    </tbody>
+</table>
+<hr />
+
+<!-- Create a link -->
+<a href="FormTag.html">Page 2 (Form tag)</a>
+<!-- If wants to open in new tab -->
+<a href="FormTag.html" target=_blank>Page 2 (Form tag) in a new tab</a>
+<!-- To navigate between pages -->
+<hr />

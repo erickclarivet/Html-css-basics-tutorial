@@ -1,0 +1,225 @@
+<!-- Tells to the browser it's a html file -->
+<!DOCTYPE html>
+<!-- All the code will be here -->
+<html>
+    <!-- Define style, or other resources, type of encodage -->
+    <head>
+        <!-- Define the type of encodage -->
+        <meta charset="utf-8">
+        <!-- Change the name in the tab on browser -->
+        <title>CSS Basics</title>
+        <!-- Link to the css (insted of puting it in a style tag) -->
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+        <h1>CSS Basics</h1>
+        <!-- h1, h3 defined style > default style -->
+        <h3>titre 3 with h3 style property</h3>
+        <!-- id > h1, h3 defined style > default style -->
+        <h3 id="titreNiveau3">titre 3 with id</h3>
+        <!-- class > h1, h3 defined style > default style -->
+        <h3 class="titreNiveau3">titre 3 with class</h3>
+        <!-- id > class > h1, h3 defined style > default style -->
+        <h3 id="titreNiveau3" class="titreNiveau3">titre 3 with class and id</h3>
+        <!-- Add a padding of 20 on the left (INSIDE MARGE => in the tag of the tag), multiple class separates with space -->
+        <h3 class="titreNiveau3 paddingLeft20">titre 3 with class with padding</h3>
+        <!-- Add a padding of 20 on the left (OUSIDE MARGE => in the tag of the tag), multiple class separates with space -->
+        <h3 class="titreNiveau3 marginLeft20">titre 3 with class with margin</h3>
+        <div class="bg-red border1 paddingGlobal20 marginLeft20">text 1</div>
+
+        <div class="bg-blue border1 paddingGlobal20 bold">text 2</div>
+        <!-- Note : Specified property > valueGlobal style (here "padding-left 20px" > "padding 50px") -->
+        <div style="background-color:brown; padding:50px; padding-left: 20px;">text</div>
+        <hr />
+
+        <h1>Floating element</h1>
+        <img src="pictures\loutre-de-mer.jpg">
+        <span>This a text</span>
+        <br />
+        <!-- Create a floating element to have one on the left and other on the right, by upper position -->
+
+        <!-- pictures resized -->
+        <img src="pictures\loutre-de-mer.jpg" class="floatLeft">
+        <img src="pictures\loutre-de-mer.jpg" class="floatRight">
+        <span>This a text</span>
+        <!-- ATTENTION : FLOAT BROKE THE FLUX SO WE NEED TO DO A CLEAR, OTHERWISE EVERYTHING WILL BE BETWEEN THE PICTURES -->
+        <div class="clearBoth"></div>
+        <hr />
+
+        <h1>Position</h1>
+        <!-- Will be placed with absolute position to the top left of the page but won't follow if scroll -->
+        <!-- Won't follow if scroll -->
+        <!-- It will be placed under the elements -->
+        <img src="pictures\loutre-de-mer.jpg" class="positionAbsolute" />
+        <!-- Will be placed with relative position from its position, it will be on the top left -->
+        <!-- Won't follow if scroll -->
+        <!-- It will be placed under the elements -->
+        <img src="pictures\loutre-de-mer.jpg" class="positioRelative" />
+        <!-- Will be placed with relative position from its position, it will be on the top left -->
+        <!-- Will follow if scroll -->
+        <!-- It will be placed under the elements -->
+        <!-- NOTE : INTERESTING FOR MENU FOR EXAMPLE -->
+        <img src="pictures\loutre-de-mer.jpg" class="positionSticky" />
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium,
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+        </p>
+        <hr />
+        <h1>Flex property</h1>
+        <!-- With flex and flex-flow : row wrap with item size 50% => only 2 elements can fit in line other go back to line, 
+            so need to change to 30% if wanted to put in line -->
+        <div class="box">
+            <div class="bg-red itemSize">element1</div>
+            <div class="bg-blue itemSize">element2</div>
+            <div class="bg-green itemSize">element3</div>
+        </div>
+        <br />
+        <!-- With flex and flex-flow : row wrap with item size 50% => the only to fit -->
+        <div class="box">
+            <div class="bg-red itemSize">element1</div>
+            <div class="bg-blue itemSize">element2</div>
+        </div>
+        <br />
+        <!-- With flex and flex-flow : we put 2 element with size in pixels and one which takes all the rest of the space with flex: auto => the only to fit -->
+        <div class="box">
+            <div class="bg-red itemSize100px">element1</div>
+            <!-- We have put a PSEUDO CLASS named "itemSizeAuto:hover" on this element in css -->
+            <!-- We have put a PSEUDO ELEMENT named "itemSizeAuto:first-letter" on this element in css -->
+            <div class="bg-blue itemSizeAuto">element2</div>
+            <div class="bg-green itemSize120px">element3</div>
+        </div>
+        <hr />
+        <!-- In style, we created a property .class1 .class2. This will apply the css only if class2 is inside class1 not in any other cases -->
+                <!-- Same with img => .class1 .class2 img. Only apply css if img is inside class2 which is inside class1 not in any other cases -->
+        <div class="class1">.class1</div>
+        <div class="class2">.class2</div>
+        <div class="class1">
+            <div class="class2">
+                .class1 .class2 <br />
+                <img src="pictures\loutre-de-mer.jpg" alt="loutre de mer" />
+            </div>
+        </div>
+    </body>
+</html>
